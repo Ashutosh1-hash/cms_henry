@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+
+<style type="text/css">
+
+    #main{
+    max-width: 200px;
+    margin: 200px auto 0;
+    padding: 40px;
+    background: #fff;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+#myProgress {
+  max-width: 600px;
+  background-color: #ddd;
+  border: 1px solid black;
+}
+
+#myBar {
+  width: 1%;
+  height: 20px;
+  background-color: #800080;
+}
+
+</style>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+
+
+
+   <!--  <script type="text/javascript">
+      $('#Modal').on('shown.bs.modal', function () {
+  $('#Input').trigger('focus')
+})
+    </script> -->
+    <h1></h1>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+<!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  Launch demo modal
+</button> -->
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Downloading Certificates Wait....</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+      <div id="myProgress">
+        <div id="myBar"></div>
+      </div>
+
+
+
+
+
+
+      </div>
+      <div class="modal-footer">
+        <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+        <a  href="/explorer" role='button' class="btn btn-primary">Show Certificates</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+  </body>
+  <script>
+    $('#myModal').modal('show')</script>
+  
+  <script>var length = <%= length %>
+  alert(length);
+console.log(length);</script>
+  <script>
+/*function move() {*/
+  var elem = document.getElementById("myBar");   
+  var width = 1;
+  var id = setInterval(frame, (70*15));
+  console.log(elem);
+  function frame() {
+    if (width >= 100) {
+      clearInterval(id);
+    } else {
+      width++; 
+      elem.style.width = width + '%'; 
+  
+    }
+
+  }
+
+
+/*}*/
+</script>
+</html>

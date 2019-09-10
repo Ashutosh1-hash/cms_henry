@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="{% static 'css/mycss.css' %}">
+
+    <style type="text/css">
+      .modal-content1 {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.2);
+    outline: 0;
+    box-shadow: 0 0 5px silver;
+ }
+
+.modal-title{
+color: #464646;
+font-weight: bold;
+font-family: 'Open Sans';
+}
+
+.modal-input{
+width: 200px;
+border: none;
+}
+
+.modal-input:focus{
+outline: none;
+
+}
+
+.login-submit{
+background-color: white;
+border: none;
+font-weight: 500;
+font-size: 18px;
+}
+
+.login-submit:focus{
+outline: none;
+}
+
+    </style>
+
+    <title>OpenForums</title>
+  </head>
+  <body>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+   <div class="d-inline mr-2" >
+            <!-- <button class="btn btn-header">Sign In</button> -->
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModalCenter">
+              Sign In
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content1">
+                  <div class="modal-header">
+                    <h4 class="modal-title" id="exampleModalCenterTitle">Sign In</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class='apex'>
+                    {{ #each data}}
+                  <div class="modal-body text-center">
+
+                    <p class="d-inline mr-4" style="font-size: 18px"><b>Username </b></p>
+                    <input id='username'  class="modal-input border-bottom border-dark" type="number">
+                  </div>{{ /each}}
+                
+</div>
+                  <br>
+                  <div class="text-center">
+                  <!--   <button type="submit" class="login-submit border-bottom border-dark pb-1 mb-5">Submit</button> -->                     
+                    <button onClick='opera()' class="btn btn-dark mb-3">Submit</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+    
+<script type="text/javascript">
+  function opera(){
+    var g=[];
+  var a= document.getElementsByClassName("modal-input");
+  for(var i=0;i<a.length;i++){
+    g.push(a[i].value);}
+
+  console.log(g);
+  
+}
+</script>
+
+  </body>
+</html>

@@ -1,0 +1,52 @@
+
+
+<style>
+
+
+	table {
+	  font-family: arial, sans-serif;
+	  border-collapse: collapse;
+	  width: 100%;
+
+	}
+
+	
+
+	td, th {
+	  border: 1px solid #dddddd;
+	  text-align: left;
+	  
+	}
+
+	tr:nth-child(even) {
+	  background-color: #dddddd;
+	}
+
+	#student-table{
+	height:30px;
+	}
+
+</style>
+
+<h4>This is student page</h4>
+<h2>Student List</h2>
+
+<div id="student-table">
+
+<table>
+	<tbody>
+		{{#each students}}
+		<tr>
+			<td>{{ id }}</td>
+			<td>{{ name }}</td>
+			<td>{{ rollno }}</td>
+			<td>{{ college }}</td>
+		</tr>
+		{{/each}}
+
+	</tbody>
+
+
+</table>
+
+</div>

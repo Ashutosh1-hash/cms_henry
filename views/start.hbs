@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+//bootstrap carousel
+
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!--Import Google Icon Font-->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            
+     <!-- <script type="text/javascript" src="js/materialize.min.js"></script> -->
+   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+<script>
+
+
+    document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.carousel');
+   
+    var instances = M.Carousel.init(elems,{});
+
+
+  });
+     document.addEventListener('DOMContentLoaded', function() {
+                var elems = document.querySelectorAll('.sidenav');
+                var instances = M.Sidenav.init(elems, {});           
+           var elemsTap = document.querySelector('.tap-target');
+    var instancesTap = M.TapTarget.init(elemsTap, {});
+             instancesTap.open()
+              });
+</script>
+
+
+    <style type="text/css">
+        html, body, .block {
+  height: 100%;
+}
+
+// Class for when element is above threshold
+.pin-top {
+  position: 0;
+}
+/*div.row{
+    padding-top: 20px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 8px;
+}*/
+div.red{
+    color:#900C3F;
+}
+// Class for when element is below threshold
+.pin-bottom {
+  position: relative;
+}
+
+// Class for when element is pinned
+.pinned {
+  position: fixed !important;
+}
+
+  .row{
+    padding-top: 100px;
+    padding-right:200px;
+    padding-left: 1px;
+    height: 800px !important;
+    width: 900px !important;
+  }
+  .carousel{
+    height:480px;
+    padding-left: 0px;
+    padding-right: 600px;
+    width: 850px !important;
+}
+
+.white-text{
+    padding-top: 50px;
+}
+
+
+         .nav-wrapper{
+          background-color:#5D17BF; 
+        }
+        .block{
+          background-color:  #7C1FFF;
+        }
+
+
+
+    </style>
+    <!-- <script type="text/javascript">
+        $(document).ready(function(){
+  $('.target').pushpin({
+    top: 0,
+    bottom: 1000,
+    offset: 0
+  });
+});
+    </script> -->
+</head>
+<!-- <script type="text/javascript" src="js/materialize.min.js"></script> -->
+<body>
+<div id="blue" class="block ">
+    <div class='row2'>
+        <div class="fixed-action-btn">
+          <a id="menu"  class="btn-floating btn-large blue" href="#">
+            <i class="large material-icons">TAP</i>
+          </a>  
+        </div>
+        <div class="tap-target" data-target="menu">
+            <div class="tap-target-content">
+              <h5 class="white-text">Hi there!</h5>
+              <p class="purpule-text">welcome to this advanced cetificate generation app, specially  designed for Henry Harvin Education inc. to ease certificate generation!!</p>
+            </div>
+        </div>
+          
+    </div>
+<div class='row'>
+<div class="carousel carousel-slider center" data-indicators="true">
+    <div class="carousel-fixed-item center">
+     
+    </div>
+    <div class="carousel-item orange" href="#one!">
+     
+    <img src="a.jpg" width="850px" height="480px" >
+    </div>
+    <div class="carousel-item amber " href="#two!">
+      <img src="b.jpg" width="850px" height="480px" >
+    </div>
+    <div class="carousel-item green " href="#three!">
+      <img src="c.jpg" width="850px" height="480px" >
+    </div>
+    <div class="carousel-item blue " href="#four!">
+      <img src="d.jpg" width="850px" height="480px" >
+    </div>
+  </div></div>
+
+
+
+
+
+
+
+
+
+
+
+     
+  <nav class="pushpin-demo-nav pinned" data-target="blue" style="top: 0px;">
+    <div class="nav-wrapper ">
+      <div class="container">
+        <a href="http://materializecss.com/pushpin.html" class="brand-logo">CMS DASHBOARD</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="/table2">Table Top</a></li>
+          <li><a href="http://materializecss.com/pushpin.html">Directory Check</a></li>
+          <li><a href="/">Return</a></li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+</div>
+
+
+
+
+
+{{!-- <div id="red" class="block red lighten-2">
+  <nav class="pushpin-demo-nav pin-top" data-target="#900C3F  " style="top: 0px,color: #900C3F">
+    <div class="nav-wrapper red">
+      <div class="container">
+        <a href="http://materializecss.com/pushpin.html" class="brand-logo">Red</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="http://materializecss.com/pushpin.html">Red Link 1</a></li>
+          <li><a href="http://materializecss.com/pushpin.html">Red Link 2</a></li>
+          <li><a href="http://materializecss.com/pushpin.html">Red Link 3</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+ --}}
+
+
+
+
+<!-- <div id="green" class="block green lighten-1">
+  <nav class="pushpin-demo-nav pin-top" data-target="green" style="top: 0px;">
+    <div class="nav-wrapper green">
+      <div class="container">
+        <a href="http://materializecss.com/pushpin.html" class="brand-logo">Green</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="http://materializecss.com/pushpin.html">Green Link 1</a></li>
+          <li><a href="http://materializecss.com/pushpin.html">Green Link 2</a></li>
+          <li><a href="http://materializecss.com/pushpin.html">Green Link 3</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div> -->
+</body>
+</html>

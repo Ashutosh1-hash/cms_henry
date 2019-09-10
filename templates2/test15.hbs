@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+    .button{
+    text-align: center;
+    font-size: 18px; 
+}
+
+.test{
+    position: relative;
+    text-align: center;
+}
+
+.img1{
+    width: 100%;
+    height: 100%;
+}
+
+.name{ 
+    color: #333333; 
+    position: absolute; 
+    top: 28%;  
+    width: 100% ; 
+    text-align: center; 
+    font-size: 3.5vw;
+
+    font-family: "Times New Roman", Times, serif;
+}
+
+.certificateno{ 
+    color: #737373; 
+    position: absolute; 
+    top: 90.0%; 
+    left: 31.5%;  
+    text-align: center; 
+    font-size: 1.9vw;
+    font-family: 'Heebo', sans-serif;
+    letter-spacing: -1px;
+}
+.date{ 
+    color: #737373; 
+    position: absolute; 
+    top: 90.1%; 
+    left: 45%;  
+    text-align: center; 
+    font-size: 1.9vw; 
+    font-family: 'Heebo', sans-serif;
+    letter-spacing: -1px;
+
+}       
+
+.date{ 
+    color: #737373; 
+    position: absolute; 
+    top: 89.7%; 
+    left: 43.3%;  
+    text-align: center; 
+    font-size: 1.9vw; 
+    font-family: 'Heebo', sans-serif;
+    letter-spacing: -1px;
+
+}       
+</style>
+
+    <link href="https://fonts.googleapis.com/css?family=Heebo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/qtv7lmd.css">
+	<link rel="stylesheet" type="text/css" href="css/cert_css.css">
+    <title>CERTIFICATE</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body>
+    <div class="test">
+    	<div class="container">
+		<div class="row">
+			<div class="banner">
+				<img class="img1" src="http://localhost:1338//temp/CSBB.png">
+				<p class="name" id="name" style="text-transform: uppercase;"> {{ name }}</p>
+				<p class="course" id="course"> </p>
+				<p class="certificateno" id="certificateno">{{ certificate_no }} </p>
+				<p class="date" id="date"> {{ batch_date }} </p>
+                
+			</div>
+		</div>
+	    </div>
+    </div>
+    
+   
+</body>
+</html>

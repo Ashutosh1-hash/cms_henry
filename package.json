@@ -1,0 +1,33 @@
+{
+  "name": "cms",
+  "version": "1.0.0",
+  "main": "app.js",
+  "dependencies": {
+    "csvtojson": "^2.0.10",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.1.5",
+    "fast-csv": "^3.4.0",
+    "fs-extra": "^8.1.0",
+    "handlebars": "^4.1.2",
+    "hbs": "^4.0.4",
+    "mysql": "^2.17.1",
+    "path": "^0.12.7",
+    "puppeteer": "^1.18.1",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ashutosh1-hash/certificate2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Ashutosh1-hash/certificate2/issues"
+  },
+  "homepage": "https://github.com/Ashutosh1-hash/certificate2#readme",
+  "description": ""
+}

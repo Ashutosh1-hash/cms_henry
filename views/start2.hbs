@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>  
+	    <title>CMS - Certificate Management System</title>
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	    
+    <style type="text/css">
+        html, body, .block {
+                             height: 100%;
+                           }
+
+		.pin-bottom {
+		  position: relative;
+		}
+	    .nav-wrapper{
+	      	background-color:#5D17BF; 
+	    }
+
+	    .block{
+	      	background-color:  #7C1FFF;
+	    }
+
+	    .button {
+		  display: inline-block;
+		  border-radius: 6px;
+		  background-color: #370d72;
+		  border: none;
+		  color: #FFFFFF;
+		  text-align: center;
+		  font-size: 40px;
+		  padding: 20px;
+		  width: 200px;
+		  transition: all 0.5s;
+		  cursor: pointer;
+		  margin: 20px;
+		}
+
+		.button span {
+		  cursor: pointer;
+		  display: inline-block;
+		  position: relative;
+		  transition: 0.5s;
+		}
+
+		.button span:after {
+		  content: '\000bb';
+		  position: absolute;
+		  opacity: 0;
+		  top: 0;
+		  right: -20px;
+		  transition: 0.5s;
+
+		}
+
+		.button:hover span {
+		  padding-right: 25px;
+		}
+
+		.button:hover span:after {
+		  opacity: 1;
+		  right: 0;
+		  color: 	#D3D3D3;
+		}
+
+      .buttons{  
+		 margin: 220px auto 0; 
+		 padding: auto;
+	     text-align: center;
+        }
+
+    </style>  
+</head>
+<body>
+<div class="block ">   
+  <nav data-target="blue" style="top: 0px;">
+    <div class="nav-wrapper">
+      <div class="container">
+        <a class="brand-logo">Certificate Management System</a>
+       </div>
+    </div>
+    <div class="buttons">
+  	<a href="/table2" action="POST" class="button" style="vertical-align:middle"><span>CRM</span></a>
+  	<a href="/app2" action="POST" class="button" style="vertical-align:middle"><span>EXCEL</span></a>
+  </div>
+  </nav>
+</div>
+
+</body>
+</html>

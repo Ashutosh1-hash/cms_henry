@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>  
+    <title>CMS - Certificate Management System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<style type="text/css">
+        html, body, .block {
+                             height: 100%;
+                           }
+	    .nav-wrapper{
+	      	background-color:#5D17BF; 
+	    }
+
+	    .block{
+	      	background-color:  #7C1FFF;
+	    }
+
+	    .brand-logo{
+	    	text-align: left;
+	    }
+
+	    .button{
+		  border-radius: 6px;
+		  background-color: #370d72;
+		  color: #FFFFFF;
+		  text-align: center;
+		  font-size: 20px;
+		  padding: 8px 16px 8px 16px;
+		  width: 400px ;
+		  transition: all 0.5s;
+		  cursor: pointer;
+		  margin: 20px;
+		  border:none;
+		
+		}
+
+		.button:hover{
+			color: red;
+			padding : 15px 30px 15px 30px;
+		}
+
+      .buttons{  
+      	 width: 500px;
+      	 height: 300px;
+		 margin: 50px ; 
+		 margin-left: 100px;
+		 padding: 20px;
+	     text-align: center;
+	     background: #b78cf2;
+        }
+         .buttons:hover{
+       	background: #0b0317;
+       }
+
+        .buttons1{ 
+      	 width: 500px;
+      	 height: 300px;
+		 margin: -350px;
+		 margin-left: 650px; 
+		 padding: 20px;
+	     text-align: center;
+	     background: #b78cf2;
+        }
+         .buttons1:hover{
+       	background: #0b0317;
+       } 
+
+        #sample{
+            padding:4px 8px 4px 8px;
+            text-decoration: underline;
+            font-size: 20px;
+            font-weight: 600;
+        } 
+        #sample:hover{
+        	color: red;
+        }
+    </style>  
+</head>
+<body>
+<div class="block ">   
+  <nav data-target="blue" style="top: 0px;">
+    <div class="nav-wrapper">
+      <div class="container">
+        <a class="brand-logo">Upload and Database sections</a>
+       </div>
+    </div>
+
+    <div class="buttons">
+  	  
+  	 <form ref='uploadForm' 
+      id='uploadForm' 
+      action='/upload' 
+      method='post' 
+      encType="multipart/form-data">
+        <input class="button" type="file" name="sampleFile" >
+        <input  class="button" type='submit' value='Upload!' >
+         <a id="sample" href=".//utils/Book1.xlsx" target="_blank" title="See the sample Excel file to be uploaded" >View sample</a> 
+    </form> 
+   	</div>
+
+  	<div class="buttons1">
+
+    <!-- <a class="button" href="/db1">  Create table   </a> -->
+    
+  	<a class="button"  href="/db1">Show File</a>
+  	<br>
+    
+   <a class="button"  href="/db2">Update Records</a>
+   <br>
+    <a class="button" href="/db3"> View Records </a>
+    
+  </nav>
+</div>
+</body>
+</html>
